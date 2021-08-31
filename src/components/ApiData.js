@@ -16,7 +16,7 @@ export class ApiData extends Component {
                             {i.description}
                             <p>{i.toUSD}</p>
                           </Card.Text>
-                          <Button variant="primary" onClick={()=> this.props.addToFav}>Add to fav</Button>
+                          <Button variant="primary" onClick={()=> {this.props.addToFav(i)}}>Add to fav</Button>
                         </Card.Body>
                       </Card>
                       </Col>
